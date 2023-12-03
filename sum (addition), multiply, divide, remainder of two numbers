@@ -1,0 +1,23 @@
+/*Write as java program to print the sum (addition), multiply, divide, remainder of two numbers.*/
+import java.util.*;
+class Calculator
+{
+    public static void main(String arg[])
+    {
+        int a,b, addition, substraction, multiplication, division, modulo;
+        System.out.println("Enter a,b values:");
+        Scanner sc=new Scanner(System.in);
+        a= sc.nextInt();
+        b= sc.nextInt();
+        addition=a+b;
+        substraction=a-b;
+        multiplication=a*b;
+        division=a/b;
+        modulo=a%b;
+        System.out.println("Addition =" +addition);
+        System.out.println("Substraction =" +substraction);
+        System.out.println("Multiplication =" +multiplication);
+        System.out.println("Divition=" +division);
+        System.out.println("The modulo / the remainder=" +modulo);
+    }
+}
