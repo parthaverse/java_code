@@ -1,0 +1,17 @@
+/*Write a java program to print the area  and perimeter of a rectangle.*/
+import java.util.*;
+class Rectangle
+{
+    public static void main(String arg[])
+    {
+        int length, breadth, area, perimeter;
+        System.out.println("Enter values of length and breadth:");
+        Scanner  sc=new Scanner(System.in);
+        length=sc.nextInt();
+        breadth= sc.nextInt();;
+        area= length*breadth;
+        perimeter= 2*(length+breadth);
+        System.out.println("Area is="+area);
+        System.out.println("Perimeter is="+perimeter);
+    }
+}
