@@ -1,0 +1,16 @@
+/*Write a java program that takes three numbers as input to calculate & print the average of the numbers.*/
+import java.util.*;
+class Average
+{
+    public static void main(String arg[])
+    {
+        int num1,num2,num3,avg;
+        System.out.println("Enter values of num1,num2,num3:");
+        Scanner  sc=new Scanner(System.in);
+        num1=sc.nextInt();
+        num2= sc.nextInt();
+        num3= sc.nextInt();
+        avg=(num1+num2+num3)/3;
+        System.out.println("The average is="+avg);
+    }
+}
