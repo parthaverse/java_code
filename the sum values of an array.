@@ -1,6 +1,6 @@
 /*Write a java program to print the sum values of an array.*/
 import java.util.*;
-class SomeOfAnArray
+class SumOfAnArray
 {
     public static void main(String arg[])
     {
