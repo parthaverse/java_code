@@ -1,0 +1,17 @@
+/*Write a java program to print the sum values of an array.*/
+import java.util.*;
+class SomeOfAnArray
+{
+    public static void main(String arg[])
+    {
+        int []a=new int [5];
+        int i,s=0;
+        System.out.println("Enter five array values:");
+        Scanner  sc=new Scanner(System.in);
+        for(i=0;i<a.length;i++)
+            a[i]=sc.nextInt();
+        for(i=0;i<a.length;i++)
+            s=s+a[i];
+        System.out.println("Sum of array="+s);
+    }
+}
