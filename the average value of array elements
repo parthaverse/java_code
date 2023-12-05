@@ -1,0 +1,18 @@
+/*Write a java program to calculate the average value of array elements.*/
+import java.util.*;
+class AvgOfAnArray
+{
+    public static void main(String arg[])
+    {
+        int []a=new int [5];
+        int i,s=0,avg;
+        System.out.println("Enter five array values:");
+        Scanner  sc=new Scanner(System.in);
+        for(i=0;i<a.length;i++)
+            a[i]=sc.nextInt();
+        for(i=0;i<a.length;i++)
+            s=s+a[i];
+        avg=s/a.length;
+        System.out.println("Average of array="+avg);
+    }
+}
