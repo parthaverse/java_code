@@ -1,0 +1,12 @@
+/*Write a Java program that uses a while loop to find and print the sum of the first 5 positive integers.*/
+class SumOfPositiveIntegers {
+    public static void main(String arg[]) {
+        int sum=0, count = 1;
+        System.out.println("Sum of the first 5 positive integers:");
+        while (count <= 5) {
+            sum += count;
+            count++;
+        }
+        System.out.println("Sum: " + sum);
+    }
+}
