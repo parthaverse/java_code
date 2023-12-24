@@ -1,0 +1,24 @@
+/*Write a program to Reverse a string, count vowels, and check for palindromes.*/
+import java.util.Scanner;
+class StringManipulator {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String str = sc.nextLine();
+        // Reverse the string
+        String revStr = new StringBuilder(str).reverse().toString();
+        System.out.println("Reversed string: " + revStr);
+        // Count vowels
+        int vowel = 0;
+        for (char c : str.toLowerCase().toCharArray()) {
+            if (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u') {
+                vowel++;
+            }
+        }
+        System.out.println("Vowel count: " + vowel);
+
+        // Check for palindrome
+        boolean isPalindrome = str.equalsIgnoreCase(revStr);
+        System.out.println("Is palindrome: " + isPalindrome);
+    }
+}
