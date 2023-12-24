@@ -1,0 +1,20 @@
+/*Write a program to declare and use variables of different data types (int, double, String, boolean).*/
+import java.util.*;
+class A{
+    public static void main(String arg[]){
+        int a=2,b=1;
+        double c=3.4,d=1.1;
+        String s="new", p="Year";
+        boolean e=true, f=false;
+        System.out.println("Sum ="+(a+b));
+        System.out.println("Substraction ="+(c*d));
+        System.out.println("Add of strings ="+(s+p));
+        System.out.println("Sum ="+(a+b));
+        if((c*d)>(a+b)){
+            System.out.println("The result ="+e);
+        }
+        else{
+            System.out.println("The result="+f);
+        }
+    }
+}
