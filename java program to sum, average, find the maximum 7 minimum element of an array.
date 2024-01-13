@@ -1,0 +1,14 @@
+/*Write a java program to sum, average, find the maximum 7 minimum element of an array.*/
+class Array{
+    public static void main(String arg[]){
+        int i,s=0,avg;
+        int a[]={1,2,3,4,5};
+        for(i=0;i<a.length;i++)
+            for(i=0;i<a.length;i++)
+                s=s+a[i];
+        System.out.println("Sum="+s);
+        System.out.println("Average="+(s/a.length));
+        System.out.println("Maximum element="+(a[a.length-1]));
+        System.out.println("Minimum element="+a[0]);
+    }
+}
