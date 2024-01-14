@@ -1,0 +1,23 @@
+/*Write a Java program to implement method overriding.*/
+import java.util.*;
+class CircleArea
+{
+    void Circle(int r)
+    {
+        System.out.println("Area of circle="+(3.14*r*r));
+    }
+}
+class CirclrCir
+{
+    void Circle(int r)
+    {
+        System.out.println("Circumference of circle="+(2*3.14*r));
+    }
+    public static void main(String arg[])
+    {
+        CircleArea c1 = new CircleArea();
+        CircleArea c2 = new CircleArea();
+        c1.Circle(2);
+        c2.Circle(3);
+    }
+}
