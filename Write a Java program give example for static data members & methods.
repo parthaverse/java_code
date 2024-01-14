@@ -1,0 +1,17 @@
+/*Write a Java program give example for static data members & methods.*/
+import java.util.*;
+class Counter
+{
+    static int count = 5;
+    Counter()
+    {
+        count++;
+        System.out.println(count);
+    }
+    public static void main(String arg[])
+    {
+        Counter c1 = new Counter();
+        Counter c2 = new Counter();
+        Counter c3 = new Counter();
+    }
+}
