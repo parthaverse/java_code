@@ -1,0 +1,83 @@
+/*Inheritances in Java*/
+/*Write a Java program to implement single inheritance.*/
+import java.util.*;
+class Employee
+{
+    int salary=1000;
+}
+class EMP extends Employee
+{
+    int allowance=200;
+    public static void main(String arg[])
+    {
+        EMP e = new EMP();
+        System.out.println("Salary="+e.salary);
+        System.out.println("New salary="+(e.salary+e.allowance));
+    }
+}
+
+-----------------------
+
+/*Write a Java program to implement multilevel inheritance.*/
+import java.util.*;
+class Animal
+{
+    void eat()
+    {
+        System.out.println("Animal is eating.");
+    }
+}
+class Dog extends Animal
+{
+    void sleep()
+    {
+        System.out.println("Dog is sleeping.");
+    }
+}
+class Cat extends Dog
+{
+    void jump()
+    {
+        System.out.println("Cat is jumping.");
+    }
+    public static void main(String arg[])
+    {
+        Cat c = new Cat();
+        c.jump();
+        c.eat();
+        c.sleep();
+    }
+}
+
+----------
+
+/*Write a Java program to implement hierarchical inheritance.*/
+import java.util.*;
+class A
+{
+    A()
+    {
+        System.out.println("class A");
+    }
+}
+class B extends A
+{
+    B()
+    {
+        super();
+        System.out.println("class B");
+    }
+}
+class C extends A{
+    C()
+    {
+        super();
+        System.out.println("class C");
+    }
+    public static void main(String arg[])
+    {
+        B b=new B();
+        C c=new C();
+        
+    }
+}
