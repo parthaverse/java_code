@@ -1,0 +1,24 @@
+/*Write a Java program to give example for 'this' keyword.*/
+import java.util.*;
+class This
+{
+    int x, y;
+    void Sthis(int x, int y)
+    {
+        this.x = x;
+        this.y = y;
+    }
+    void display()
+    {
+        if(x>y)
+            System.out.println("x is big");
+        else
+            System.out.println("y is big");
+    }
+    public static void main(String arg[])
+    {
+        This t = new This();
+        t.Sthis(4,3);
+        t.display();
+    }
+}
