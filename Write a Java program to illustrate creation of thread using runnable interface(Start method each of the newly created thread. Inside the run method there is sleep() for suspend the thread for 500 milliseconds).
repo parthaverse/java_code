@@ -1,0 +1,22 @@
+/*Write a Java program to illustrate creation of thread using runnable interface(Start method each of the newly created thread. Inside the run method there is sleep() for suspend the thread for 500 milliseconds).*/
+class MyRunnable implements Runnable{
+    public void run() {
+        try {
+           System.out.println(Thread.currentThread().getName()+"is running");
+           Thread.sleep(500);
+            System.out.println(Thread.currentThread().getName()+"has completed");
+        }
+        catch (InterruptedException e){
+            e.printStackTrace();
+        }
+    }
+}
+class ThreadEg{
+    public static void main(String arg[]){
+        Thread t1=new Thread(new MyRunnable(),"Thread-1");
+        Thread t2=new Thread(new MyRunnable(),"Thread-2");
+        t1.start();
+        t2.start();
+        System.out.println("Main thread continues");
+    }
+}
